@@ -1,0 +1,81 @@
+<html>
+
+<head>
+  <script>
+    
+    function inicio() {
+        var escolha = Number(prompt('Selecione uma opção:  1.) Soma 2.) subtração  3.) multiplicação  4.) Divisão 5.) sair' ));
+
+			if (escolha == 1){
+                fazer_soma()
+            }
+            else if (escolha == 2){
+                fazer_subtra()
+            }
+            else if (escolha == 3){
+                fazer_multi()
+            }
+            else if (escolha == 4){
+                fazer_divi()
+            }
+            else {
+                sair()
+            }
+            }
+    
+
+    function fazer_soma() {
+        var um = Number(prompt("Escreva um numero "));
+        var dois = Number(prompt("Escreva outro numero "));
+        var re = um + dois;
+        alert("o resultado é " + re );
+        inicio()
+        
+    }
+
+    function fazer_subtra() {
+        var um = Number(prompt("Escreva um numero "));
+        var dois = Number(prompt("Escreva outro numero "));
+        var re = um - dois
+        alert("o resultado é " + re);
+        inicio()
+
+    }
+
+    function fazer_multi() {
+        var um = Number(prompt("Escreva um numero "));
+        var dois = Number(prompt("Escreva outro numero "));
+        var re = um * dois
+        alert("o resultado é " + re);
+        inicio()
+
+    }
+
+    function fazer_divi() {
+        var um = Number(prompt("Escreva um numero "));
+        var dois = Number(prompt("Escreva outro numero "));
+        var re = um / dois
+        alert("o resultado é " + re );
+        inicio()
+        
+    }
+
+    function sair() {
+			var confirma = confirm('Você deseja sair?');
+			if (confirma) {
+				window.close();
+			} else {
+				inicio();
+			}
+        }
+        inicio();
+
+        
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
